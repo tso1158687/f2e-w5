@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+//font-awsome
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+// font
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  font-family: 'Noto Sans TC';
+  box-sizing: border-box;
+}
 $green:#50ff44;
 $black:#000000;
 $white:#ffffff;
