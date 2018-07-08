@@ -83,4 +83,22 @@ nav {
 
     }
   }
+  .chapter-container{
+    .chapter-title{
+      span{
+        background-color: $black;
+        color: $white;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px 24px;
+      }
+    }
+    .chapter-content{
+      border: 4px solid $black;
+      >div{
+        padding: 15px 24px;
+      }
+    }
+  }
 }
