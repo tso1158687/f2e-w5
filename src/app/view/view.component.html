@@ -1,0 +1,33 @@
+<div class="ui-g">
+  <div class="intro">
+    <div>
+      My Hexschool >
+      <p-dropdown [options]="chapter" [(ngModel)]="selectedChapter" (onClick)="changeChapter()"></p-dropdown>
+      <p-dropdown [options]="page" [(ngModel)]="selectedPage" (onClick)="changePage()"></p-dropdown>
+    </div>
+    <div class="comic-content">
+      <div class="switch-page left">
+        left
+      </div>
+      <div class="pic">
+        <!-- <img [src]="item.Picture1"> -->
+        <img src="assets/img/commic/storyboard-1.png">
+      </div>
+      <div class="switch-page right">
+        right
+      </div>
+    </div>
+    <div class="overview">
+      <!-- <div class="overview-pic" *ngFor="let pic of pics">
+        <img [src]="pic.page">
+      </div> -->
+      <p-scrollPanel [style]="{width: '100%', height: '140px'}">
+        <span *ngFor="let pic of pics">
+          <img [src]="pic.page">
+        </span>
+        <!-- <div class="overview-pic" *ngFor="let pic of pics"> -->
+        <!-- </div> -->
+      </p-scrollPanel>
+    </div>
+  </div>
+</div>
